@@ -4,9 +4,11 @@ import (
 	"github.com/Kharec/questlister/internal/db"
 )
 
+const dbPath = "~/.config/questlister/ql.db"
+
 func Run(args []string) {
 
-	database := db.OpenDatabase("database/questlister.db")
+	database := db.OpenDatabase(dbPath)
 	db.Migrate(database)
 	ql := QL(database)
 
