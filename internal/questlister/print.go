@@ -16,7 +16,7 @@ func PrintQuests(quests []models.Quest) {
 		if quest.Completed {
 			fmt.Print("[X] ")
 		} else {
-			fmt.Print("[ ] ")
+			fmt.Print("[] ")
 		}
 		fmt.Printf("%s\n", quest.Title)
 	}
