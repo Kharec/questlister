@@ -1,12 +1,15 @@
 package questlister
 
 import (
+	"os"
+	"path/filepath"
+
 	"github.com/Kharec/questlister/internal/db"
 )
 
-const dbPath = "~/.config/questlister/ql.db"
-
 func Run(args []string) {
+
+	dbPath := filepath.Join(os.Getenv("HOME"), ".config/questlister/ql.db")
 
 	database := db.OpenDatabase(dbPath)
 	db.Migrate(database)
