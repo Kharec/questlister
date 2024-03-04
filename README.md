@@ -47,8 +47,8 @@ Adding quests :
 
 ```
 ➜  ql list              
-[ ] write readme
-[ ] clean code
+[] write readme
+[] clean code
 ```
 
 Achieve one quest :
@@ -57,7 +57,7 @@ Achieve one quest :
 ➜  ql achieve "write readme"
 ➜  ql list                  
 [X] write readme
-[ ] clean code
+[] clean code
 ```
 
 Delete achieved quests :
@@ -65,7 +65,7 @@ Delete achieved quests :
 ```
 ➜  ql clean
 ➜  ql list 
-[ ] clean code
+[] clean code
 ```
 
 ## License
